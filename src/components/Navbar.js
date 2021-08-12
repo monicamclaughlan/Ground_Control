@@ -10,6 +10,8 @@ const Navbar = () => {
             <Link to='/about'>Contact</Link>
             <Link to='/cart'>Cart</Link>
             <Link to='/login'>Log In</Link>
+            <img src="" alt="">Logo</img>
+            <Link to='/cart'>Cart Image</Link>
 
         </div>
     )
