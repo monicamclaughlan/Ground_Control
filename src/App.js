@@ -3,6 +3,7 @@ import { Route, Switch } from 'react-router-dom';
 import { useState } from 'react';
 import Navbar from './components/Navbar'
 import Shop from './pages/Shop'
+import Menu from './pages/Menu'
 import About from './pages/About'
 import Blog from './pages/Blog'
 import Cart from './pages/Cart'
@@ -16,8 +17,11 @@ function App() {
     <div className="App">
   <Navbar/>
   <Switch>
-    <Route path exact = '/'>
+    <Route path exact='/'>
       <Shop/>
+    </Route>
+    <Route path='/menu'>
+      <Menu/>
     </Route>
     <Route path='/about'>
       <About/>
@@ -28,7 +32,7 @@ function App() {
     <Route path='/cart'>
       <Cart/>
     </Route>
-    <Route path ='/login'> 
+    <Route path='/login'> 
       <Login/>
     </Route>
   </Switch>

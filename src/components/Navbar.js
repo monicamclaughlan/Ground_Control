@@ -1,19 +1,25 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
+import Dropdown from './Dropdown'
+
+import {FaShoppingCart} from 'react-icons/fa'
+import {IoRocketSharp} from 'react-icons/io5'
 
 const Navbar = () => {
     return (
-        <div>
-            <Link to='/'>Shop</Link>
-            <Link to='/about'>About</Link>
-            <Link to='/blog'>Blog</Link>
-            <Link to='/about'>Contact</Link>
-            <Link to='/cart'>Cart</Link>
-            <Link to='/login'>Log In</Link>
-            <img src="" alt="">Logo</img>
-            <Link to='/cart'>Cart Image</Link>
-
-        </div>
+        <div className="nav">
+            <div>
+                <Dropdown/>
+            </div>
+            <div className="rocket">
+                <IoRocketSharp size={50}/>
+            </div>
+            <div className="cart">
+                <Link to='/cart'><FaShoppingCart size={20}/></Link>
+            </div>
+                
+        
+       </div>
     )
 }
 
