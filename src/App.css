@@ -129,7 +129,43 @@
   padding: 20px;
 }
 
+/* Login */
+.login-page{ 
+  background-color: #ffffff;
+  text-align: center;
+  width: 70%;
+  margin: 0 auto;
+}
 
+.login-page h2{ 
+  margin-top: 0;
+  border-bottom: solid 1px black;
+}
+
+.login-checkout{ 
+  display:flex;
+  background-color: #ffffff;
+  justify-content: space-around;
+}
+
+.login{
+  background-color: #ffffff;
+  height: 50%;
+  text-align: center;
+}
+
+.login input { 
+  padding: 5px;
+  margin: 10px;
+}
+
+.login button { 
+  margin-bottom: 10px;
+}
+
+.guest button{ 
+  text-align: center;
+}
 /* Footer */
 footer{ 
   text-align: center;
