@@ -7,8 +7,7 @@ import {IoRocketSharp} from 'react-icons/io5'
 const Footer = () => {
     return (
         <footer>
-            <Link to='/'><IoRocketSharp size={30} color="#FF0000"/></Link>
-            <h2>Ground Control</h2>
+            <Link to='/'><IoRocketSharp size={40} color="#FF0000"/></Link>
             <div className="footer-icons">
                 <a href="https://www.twitter.com" target="_blank" rel="noreferrer"><FaTwitter size={30}/></a>
                 <a href="https://www.instgram.com" target="_blank" rel="noreferrer"><FiInstagram size={30}/></a>
