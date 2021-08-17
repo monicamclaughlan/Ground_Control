@@ -1,3 +1,13 @@
+.App{ 
+  position: relative;
+  min-height: 100vh;
+}
+
+.wrapper{ 
+  padding-bottom: 12rem;
+  background-color: #252525;
+}
+
 /* Nav */
 
 .nav{ 
@@ -92,8 +102,9 @@
   flex-wrap: wrap;
   /* overflow-y: scroll; */
   margin-bottom: 100px;
-  height: 100vh;
+  height: 100%;
   background-color: #252525;
+  padding-bottom: 12rem;
 }
 
 .product-item{ 
@@ -105,11 +116,17 @@
 .select-product{
   overflow-y: scroll;
   text-align: center;
+  height: 100%;
+  background-color: #ffffff;
 }
 
 .details{ 
   display: flex;
   justify-content: center;
+}
+
+.costs { 
+  padding: 20px;
 }
 
 
@@ -118,11 +135,12 @@ footer{
   text-align: center;
   background-color: #252525;
   color: #ffffff;
-  position: fixed;
+  position: relative;
   left: 0;
   bottom: 0;
   width: 100%;
   padding-top: 20px;
+  height: 12rem;
 }
 
 .footer-icons{ 

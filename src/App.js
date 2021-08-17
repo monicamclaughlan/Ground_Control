@@ -19,12 +19,15 @@ function App() {
 const [products, setProducts] = useState([])
 const [selectedProduct, setSelectedProduct] = useState([])
 
+
+
   return (
     <div className="App">
   <Navbar/>
+  <div className="wrapper">
   <Switch>
     <Route path exact='/' render={(rp) => <Shop {...rp} products={products} setProducts={setProducts} setSelectedProduct={setSelectedProduct}/>}/>
-    <Route path='/product/:id' render={(rp) => <Product {...rp} product={selectedProduct} />}/>
+    <Route path='/product/:id' render={(rp) => <Product {...rp} product={selectedProduct} setSelectedProduct={setSelectedProduct}/>}/>
     <Route path='/menu'>
       <Menu/>
     </Route>
@@ -41,6 +44,7 @@ const [selectedProduct, setSelectedProduct] = useState([])
       <Login/>
     </Route>
   </Switch>
+  </div>
   <Footer/>
     </div>
   );
