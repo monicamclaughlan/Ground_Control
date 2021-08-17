@@ -12,7 +12,7 @@ const Navbar = () => {
                 <Dropdown/>
             </div>
             <div className="rocket">
-                <IoRocketSharp size={50}/>
+                <Link to='/'><IoRocketSharp size={50} color="FF0000"/></Link>
             </div>
             <div className="cart">
                 <Link to='/cart'><FaShoppingCart size={20}/></Link>
