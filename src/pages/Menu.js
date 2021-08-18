@@ -9,17 +9,17 @@ const Menu = ({menu, setMenu}) => {
 
     const menuItems = menu.map((m, i) => { 
         return ( 
-            <>
-            <div className="item">
-                <h3>{m.title}</h3>
-                <p>{m.size}</p>
-                <p>{m.description}</p>
-                <h4>{m.price}</h4>
+            <div className="item-image">
+                <div className="item">
+                    <h3>{m.title}</h3>
+                    <p>{m.size}</p>
+                    <p>{m.description}</p>
+                    <h4>{m.price}</h4>
+                </div>
+                <div className='image'>
+                    <img src={m.img} alt="coffee"></img>
+                </div>
             </div>
-            <div>
-                <img src={m.img} alt="coffee"></img>
-            </div>
-            </>
         )
 
     })

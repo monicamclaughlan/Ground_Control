@@ -106,9 +106,20 @@
   color: white;
 }
 
-.item{ 
+.item-image{
+  display: flex;
   border: solid 1px white;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 1em;
 }
+
+.image img { 
+  width: 150px;
+  height: 150px;
+}
+
+
 /* Shop */
 .all-products{ 
   display: flex;
@@ -233,5 +244,13 @@ footer{
 @media screen and (min-width: 1024px){ 
   .title{ 
     display:block;
+  }
+
+  .menu-items{ 
+    width: 80%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1em;
   }
 }
