@@ -3,6 +3,8 @@
   min-height: 100vh;
 }
 
+/* Container */
+
 .wrapper{ 
   padding-bottom: 12rem;
   background-color: #252525;
@@ -26,6 +28,10 @@
   padding-top: 20px;
   padding-bottom: 30px;
   text-transform: uppercase;
+}
+
+.title{ 
+  display: none;
 }
 
 .cart a{ 
@@ -94,6 +100,15 @@
   box-shadow: 0 1px 8px rgba(0, 0, 0, 0.3);
 }
 
+/* Order Menu Items */
+.menu-items{ 
+  padding-top: 30px;
+  color: white;
+}
+
+.item{ 
+  border: solid 1px white;
+}
 /* Shop */
 .all-products{ 
   display: flex;
@@ -131,41 +146,66 @@
 
 /* Login */
 .login-page{ 
-  background-color: #ffffff;
+  background-color: #252525;
   text-align: center;
   width: 70%;
   margin: 0 auto;
+  color: white;
 }
 
-.login-page h2{ 
+.login-page h3{ 
   margin-top: 0;
-  border-bottom: solid 1px black;
+  border-bottom: solid 1px white;
+  padding-bottom: 20px;
+  text-transform: uppercase;
 }
 
 .login-checkout{ 
   display:flex;
-  background-color: #ffffff;
+  flex-wrap: wrap;
+  background-color: #252525;
   justify-content: space-around;
+  align-items: center;
+  border-bottom: solid 1px white;
+}
+
+.form-input{
+  border: solid 1px white;
+  background-color: #252525;
 }
 
 .login{
-  background-color: #ffffff;
-  height: 50%;
+  background-color: #252525;
+  /* height: 50%; */
   text-align: center;
 }
 
 .login input { 
   padding: 5px;
-  margin: 10px;
+  margin: 10px 0 10px 0;
+  width:90%;
 }
 
 .login button { 
-  margin-bottom: 10px;
+  margin: 8px;
+  text-transform: uppercase;
+  width: 80%;
+  padding: 10px;
+}
+
+.guest{ 
+  text-transform: uppercase;
+  /* padding-left: 190px; */
+  /* border-left: solid 1px white; */
 }
 
 .guest button{ 
   text-align: center;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  padding: 10px;
 }
+
 /* Footer */
 footer{ 
   text-align: center;
@@ -187,4 +227,11 @@ footer{
 
 .footer-icons a{ 
   color: #ffffff;
+}
+
+
+@media screen and (min-width: 1024px){ 
+  .title{ 
+    display:block;
+  }
 }

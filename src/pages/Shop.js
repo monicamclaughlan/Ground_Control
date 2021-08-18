@@ -1,7 +1,6 @@
 import React, { useEffect } from 'react'
 import store from  '../store_dummy'
-import Product from '../components/Product'
-import {Link} from 'react-router-dom'
+
 
 const Shop = ({products, setProducts, setSelectedProduct, history}) => {
 
@@ -9,12 +8,7 @@ useEffect(() => {
     setProducts(store)
 }, [])    
 
-// const onClick = (p) => {
-//     console.log(p)
-//     return(
-//         <Product p={p}/>
-//     )  
-// }
+
 
 let productList = products.map((p, i) => { 
     return ( 

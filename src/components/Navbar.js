@@ -12,8 +12,8 @@ const Navbar = () => {
                 <Dropdown/>
             </div>
             <div className="rocket">
-                <h2>Groud Control</h2>
-                <h4>Coffee Roasters</h4>
+                <h2 className="title">Ground Control</h2>
+                <h4 className="title">Coffee Roasters</h4>
                 <Link to='/'><IoRocketSharp size={50} color="FF0000"/></Link>
             </div>
             <div className="cart">

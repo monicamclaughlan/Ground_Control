@@ -24,11 +24,12 @@ const Login = () => {
 
   return (
   <div className="login-page">
-  <h2>Please Sign In</h2>
+  <h3>Please Sign In</h3>
   <div className="login-checkout">
     
       <div className="login">
         <input
+          className="form-input"
           onChange={handleChange}
           value={login.email}
           type="text"
@@ -38,6 +39,7 @@ const Login = () => {
         />
         <br></br>
         <input
+          className="form-input"
           onChange={handleChange}
           value={login.password}
           type="password"
@@ -52,8 +54,8 @@ const Login = () => {
         </button>
       </div>
       <div className="guest">
-        <h3>Guest Checkout</h3>
-        <h3>Proceed to Checkout</h3>
+        <h4>checkout as guest?</h4>
+        <h4>Proceed to Checkout</h4>
         <button>Continue as Guest</button>
       </div>
     </div>

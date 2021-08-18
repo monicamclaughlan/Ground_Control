@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react'
+import React from 'react'
 import store from '../store_dummy'
 
 const Product = (props) => {

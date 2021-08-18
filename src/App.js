@@ -1,6 +1,6 @@
 import './App.css';
 import { Route, Switch } from 'react-router-dom';
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import Navbar from './components/Navbar'
 import Shop from './pages/Shop'
 import Product from './components/Product'
@@ -19,6 +19,8 @@ function App() {
 const [products, setProducts] = useState([])
 const [selectedProduct, setSelectedProduct] = useState([])
 
+const [menu, setMenu] = useState([])
+
 
 
   return (
@@ -29,7 +31,7 @@ const [selectedProduct, setSelectedProduct] = useState([])
     <Route path exact='/' render={(rp) => <Shop {...rp} products={products} setProducts={setProducts} setSelectedProduct={setSelectedProduct}/>}/>
     <Route path='/product/:id' render={(rp) => <Product {...rp} product={selectedProduct} setSelectedProduct={setSelectedProduct}/>}/>
     <Route path='/menu'>
-      <Menu/>
+      <Menu menu={menu} setMenu={setMenu}/>
     </Route>
     <Route path='/about'>
       <About/>
