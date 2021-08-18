@@ -138,12 +138,18 @@
   color: #ffffff;
 }
 
+
+
 /* Product */
 .select-product{
   overflow-y: scroll;
   text-align: center;
   height: 100%;
   background-color: #ffffff;
+}
+
+.select-product img{ 
+  margin: 0 auto;
 }
 
 .details{ 

@@ -9,7 +9,7 @@ const Product = (props) => {
 
     return (
         <div className="select-product">
-            <img src={s[0].img} height="500px" width="500px" alt="coffee-bag"></img>
+            <img src={s[0].img} height="400px" width="400px" alt="coffee-bag"></img>
             <h1>{s[0].title}</h1>
             <div className='details'>
                 <div className="costs">
