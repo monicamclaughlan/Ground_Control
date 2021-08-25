@@ -119,6 +119,10 @@
   height: 150px;
 }
 
+.added { 
+  background-color: gray;
+}
+
 
 /* Shop */
 .all-products{ 
@@ -201,6 +205,7 @@
   padding: 5px;
   margin: 10px 0 10px 0;
   width:90%;
+  color: white;
 }
 
 .login button { 

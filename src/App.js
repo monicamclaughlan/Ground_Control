@@ -21,6 +21,14 @@ const [selectedProduct, setSelectedProduct] = useState([])
 
 const [menu, setMenu] = useState([])
 
+const [cart, setCart] = useState([])
+
+const addToCart = (i) => { 
+    setCart([...cart, i])
+}
+
+const removeFromCart = (index) => setCart(cart.filter((currentValue, currentIndex) => currentIndex !== index))
+
 
 
   return (
@@ -31,7 +39,7 @@ const [menu, setMenu] = useState([])
     <Route path exact='/' render={(rp) => <Shop {...rp} products={products} setProducts={setProducts} setSelectedProduct={setSelectedProduct}/>}/>
     <Route path='/product/:id' render={(rp) => <Product {...rp} product={selectedProduct} setSelectedProduct={setSelectedProduct}/>}/>
     <Route path='/menu'>
-      <Menu menu={menu} setMenu={setMenu}/>
+      <Menu menu={menu} setMenu={setMenu} addToCart={addToCart}/>
     </Route>
     <Route path='/about'>
       <About/>
@@ -40,7 +48,7 @@ const [menu, setMenu] = useState([])
       <Blog/>
     </Route>
     <Route path='/cart'>
-      <Cart/>
+      <Cart cart={cart} remove={removeFromCart}/>
     </Route>
     <Route path='/login'> 
       <Login/>
